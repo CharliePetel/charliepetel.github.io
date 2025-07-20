@@ -1,0 +1,193 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <title>About – Charlie Petel</title>
+    <link rel="icon" type="image/png" href="images/favicon.png" />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        margin: 0;
+        font-family: Helvetica, Arial, sans-serif;
+        background: #fff;
+        color: #000;
+      }
+
+      header {
+        padding: 2rem 2rem 1rem;
+      }
+
+      .header-inner {
+        max-width: 900px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+      }
+
+      .logo a {
+        text-decoration: none;
+        color: black;
+        font-weight: bold;
+        font-size: 1.3rem;
+        white-space: nowrap;
+      }
+
+      nav {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1.5rem;
+        justify-content: flex-end;
+      }
+
+      nav a {
+        position: relative;
+        text-decoration: none;
+        color: #000;
+        font-size: 0.9rem;
+        text-transform: uppercase;
+        padding: 0.5rem 0;
+      }
+
+      nav a::before,
+      nav a::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        right: 0;
+        height: 1px;
+        background: #000;
+        transform: scaleX(0);
+        transition: transform 0.3s ease;
+      }
+
+      nav a::before {
+        top: 0; /* obere Linie */
+      }
+
+      nav a::after {
+        bottom: 0; /* untere Linie */
+      }
+
+      nav a:hover::before,
+      nav a:hover::after,
+      nav a.active::before,
+      nav a.active::after {
+        transform: scaleX(1); /* Linien sichtbar machen */
+      }
+
+      main {
+        width: 100%;
+        max-width: 1200px;
+        margin: 3rem auto;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+      }
+
+      .overlay-text span {
+        font-size: 0.9rem;
+        letter-spacing: 1px;
+      }
+
+      .about-text {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: white;
+        text-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+      }
+
+      .about-text p {
+        font-size: 12px;
+        letter-spacing: 1px;
+      }
+
+      .about-image {
+        position: relative;
+        text-align: cover;
+        max-width: 900px;
+        align-self: stretch;
+      }
+
+      .about-image img {
+        width: 1330px;
+        height: 593px;
+        filter: blur(2px);
+      }
+
+      footer {
+        text-align: center;
+        padding: 2rem;
+        font-size: 0.85rem;
+        color: #000;
+        border-top: 1px solid #ccc;
+        margin-top: 4rem;
+      }
+
+      @media {
+        main {
+          flex-direction: column;
+          align-items: center;
+        }
+
+        .about-text,
+        .about-image {
+          margin-left: 0;
+          margin-right: 0;
+        }
+      }
+    </style>
+  </head>
+  
+  <body>
+    <header>
+      <div class="header-inner">
+        <div class="logo"><a href="index.html">Charlie Petel</a></div>
+        <nav>
+          <a href="artists.html">ARTISTS</a>
+          <a href="about.html" class="active">ABOUT</a>
+          <a href="exhibitions.html">EXHIBITIONS</a>
+          <a href="contact.html">CONTACT</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <div class="about-image">
+        <img src="images/about.jpg" alt="Gallery" />
+        <div class="about-text">
+          <p>
+            Gallery Charlie Petel is a contemporary art gallery dedicated to presenting thoughtful and engaging
+            exhibitions by emerging and established artists. We work closely with our artists to develop projects that
+            challenge the viewer and explore the depth and range of contemporary practices.
+          </p>
+
+          <p>
+            Founded in 2018 and based in Ghent, Belgium, Studio23 seeks to foster meaningful connections between
+            artists, collectors, and the public. Our programming includes solo exhibitions, group shows, and
+            participation in international art fairs.
+          </p>
+
+          <p>
+            We believe in the transformative power of art and strive to provide a platform where ideas, identity, and
+            aesthetics converge in powerful visual experiences.
+          </p>
+        </div>
+        <a href="https://instagram.com/charliepetel" target="_blank" rel="noopener noreferrer">
+          <i class="fa fa-instagram" style="font-size: 25px; color: black"></i
+        ></a>
+      </div>
+    </main>
+
+    <footer>© 2025 Charlie Petel. All rights reserved.</footer>
+  </body>
+</html>

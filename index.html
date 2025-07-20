@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <title>Gallery - Charlie Petel</title>
+    <link rel="icon" type="image/png" href="images/favicon.png" />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        margin: 0;
+        font-family: Helvetica, Arial, sans-serif;
+        background: #fff;
+        color: #000;
+      }
+
+      header {
+        padding: 2rem 2rem 1rem;
+      }
+
+      .header-inner {
+        max-width: 900px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+      }
+
+      .logo a {
+        text-decoration: none;
+        color: black;
+        font-weight: bold;
+        font-size: 1.3rem;
+        white-space: nowrap;
+      }
+
+      nav {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1.5rem;
+        justify-content: flex-end;
+      }
+
+      nav a {
+        position: relative;
+        text-decoration: none;
+        color: #000;
+        font-size: 0.9rem;
+        text-transform: uppercase;
+        padding: 0.5rem 0;
+      }
+
+      nav a::before,
+      nav a::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        right: 0;
+        height: 1px;
+        background: #000;
+        transform: scaleX(0);
+        transition: transform 0.3s ease;
+      }
+
+      nav a::before {
+        top: 0; /* obere Linie */
+      }
+
+      nav a::after {
+        bottom: 0; /* untere Linie */
+      }
+
+      nav a:hover::before,
+      nav a:hover::after,
+      nav a.active::before,
+      nav a.active::after {
+        transform: scaleX(1); /* Linien sichtbar machen */
+      }
+
+      .image-container {
+        position: relative;
+        text-align: center;
+        margin: 3rem auto;
+        max-width: 900px;
+      }
+
+      .image-container img {
+        width: 940px;
+        height: 364px;
+      }
+
+      .overlay-text {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: white;
+        text-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+      }
+
+      .overlay-text p {
+        font-style: italic;
+        margin: 0;
+        font-size: 1.4rem;
+      }
+
+      .overlay-text h1 {
+        margin: 0.5rem 0;
+        font-size: 2rem;
+      }
+
+      .overlay-text span {
+        font-size: 0.9rem;
+        letter-spacing: 1px;
+      }
+
+      footer {
+        text-align: center;
+        padding: 2rem;
+        font-size: 0.85rem;
+        color: #000;
+        border-top: 1px solid #ccc;
+        margin-top: 4rem;
+      }
+    </style>
+  </head>
+
+  <body>
+    <header>
+      <div class="header-inner">
+        <div class="logo"><a href="index.html">Charlie Petel</a></div>
+        <nav>
+          <a href="artists.html">ARTISTS</a>
+          <a href="about.html">ABOUT</a>
+          <a href="exhibitions.html">EXHIBITIONS</a>
+          <a href="contact.html">CONTACT</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="exhibit">
+      <div class="image-container">
+        <img src="images/aktuell.jpg" alt="Aktuell" />
+        <div class="overlay-text">
+          <p><em>How many more times</em></p>
+          <h1>Lulu Chiadmi</h1>
+          <span>20.06 – 15.07.2025</span>
+        </div>
+        <a href="https://instagram.com/charliepetel" target="_blank" rel="noopener noreferrer">
+          <i class="fa fa-instagram" style="font-size: 25px; color: black"></i
+        ></a>
+      </div>
+    </main>
+
+    <footer>© 2025 Charlie Petel. All rights reserved.</footer>
+  </body>
+</html>
