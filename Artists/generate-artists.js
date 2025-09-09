@@ -20,7 +20,7 @@ data.forEach((artist) => {
 
   galleryHtml += `
   <div class="artist-tile">
-    <a href="${artist.filename}">
+    <a href="artists/${artist.filename}">
       <img src="${artist.thumbnail}" alt="${artist.name}">
       <div class="artist-name">${artist.name}</div>
     </a>
