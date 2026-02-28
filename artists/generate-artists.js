@@ -194,10 +194,11 @@ const artistsHtml = `
       <div class="artist-grid">${galleryHtml}</div>
     </main>;
 
-  <footer>© 2025 Studio23. All rights reserved.</footer>
+  <footer>© 2026 Charlie Petel. All rights reserved.</footer>
 </body>
 </html>
 `;
 
 fs.writeFileSync("../artists.html", artistsHtml, "utf8");
 console.log("✅ Übersichtsseite erstellt: artists.html");
+
