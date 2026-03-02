@@ -1,0 +1,191 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Haus NO – Charlie Petel</title>
+    <link rel="icon" type="image/png" href="images/favicon.png" />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        font-family: Helvetica, Arial, sans-serif;
+        background: #fff;
+        color: #000;
+      }
+
+      header {
+        padding: 2rem 2rem 1rem;
+      }
+
+      .header-inner {
+        max-width: 900px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+      }
+
+      .logo a {
+        text-decoration: none;
+        color: black;
+        font-weight: bold;
+        font-size: 1.3rem;
+        white-space: nowrap;
+      }
+
+      nav {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1.5rem;
+        justify-content: flex-end;
+      }
+
+      nav a {
+        position: relative;
+        text-decoration: none;
+        color: #000;
+        font-size: 0.9rem;
+        text-transform: uppercase;
+        padding: 0.5rem 0;
+      }
+
+      nav a::before,
+      nav a::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        right: 0;
+        height: 1px;
+        background: #000;
+        transform: scaleX(0);
+        transition: transform 0.3s ease;
+      }
+
+      nav a::before {
+        top: 0; /* obere Linie */
+      }
+
+      nav a::after {
+        bottom: 0; /* untere Linie */
+      }
+
+      nav a:hover::before,
+      nav a:hover::after,
+      nav a.active::before,
+      nav a.active::after {
+        transform: scaleX(1); /* Linien sichtbar machen */
+      }
+      
+       main {
+       max-width: 1000px;
+        margin: 4rem auto;
+        padding: 0 2rem;
+      }
+
+      .content {
+        width: 521px;
+        max-width: 850px;
+        margin-left: 100px;
+      }
+
+      h1 {
+        font-size: 30px;
+        text-transform: uppercase;
+        font-weight: bold;
+      }
+
+      .subtitle {
+        font-weight: bold;
+        text-transform: uppercase;
+        font-size: 18px;
+      }
+
+      .date {
+        font-weight: bold;
+        text-transform: uppercase;
+        font-size: 16px;
+        margin-bottom: 20px;
+      }
+
+      p {
+        font-size: 13px;
+        font-style: italic;
+        line-height: 1.7;
+        margin-bottom: 1rem;
+      }
+
+      .gallery-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 2rem;
+        margin-top: 2rem;
+      }
+
+      .gallery-tile {
+        position: relative;
+        overflow: hidden;
+      }
+
+      .gallery-tile img {
+        width: 265px;
+        height: 295px;
+        display: block;
+        margin-bottom: 0.5rem;
+        object-fit: cover;
+      }
+
+      footer {
+        text-align: center;
+        padding: 3rem;
+        font-size: 0.85rem;
+        color: #000;
+        border-top: 1px solid #ccc;
+      }
+
+      @media (max-width: 768px) {
+        .content,
+        .image img {
+          margin-left: auto;
+          margin-right: auto;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="header-inner">
+        <div class="logo"><a href="../index.html">Charlie Petel</a></div>
+        <nav>
+          <a href="../artists.html">ARTISTS</a>
+          <a href="../about.html">ABOUT</a>
+          <a href="../exhibitions.html" class="active">EXHIBITIONS</a>
+          <a href="../contact.html">CONTACT</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <div class="content">
+        <h1>Haus NO</h1>
+        <div class="subtitle">Dietmar Teßmann</div>
+        <div class="date">Oct 04, 2025 - Oct 28, 2025</div>
+        <p>Dietmar Teßmann (born in 1962 in Offenbach am Main) studied at the Berlin University of the Arts and has been working as a stage designer and painter ever since.</p>
+<p>His paintings are inspired by impressions of Brittany, where he condenses architecture, light, and shadow into geometrically clear compositions. In doing so, he combines influences from Chirico, Magritte, Hopper, and Escher with his own visual language, which focuses strongly on space and structure. Most of the works on display are small-format panel paintings that open up small spaces for events between flatness and depth.</p>
+      </div>
+
+      <div class="gallery-grid">
+        <div class="gallery-grid"><img src="../images/HausNO-1.jpg" alt="Haus NO">
+<img src="../images/HausNO-2.jpg" alt="Haus NO">
+<img src="../images/HausNO-3.jpg" alt="Haus NO">
+<img src="../images/HausNO-4.jpg" alt="Haus NO"></div>
+      </div>
+    </main>
+
+    <footer>© 2026 Charlie Petel. All rights reserved.</footer>
+  </body>
+</html>
