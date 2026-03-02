@@ -119,35 +119,28 @@
         font-style: italic;
         line-height: 1.7;
         margin-bottom: 1rem;
-        
-        .gallery {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 1.5rem;
-  margin-top: 2rem;
-}
-
-.gallery img {
-  width: 100%;
-  height: auto;
-  object-fit: cover;
-}
       }
 
-      .image {
-        margin-top: 3rem;
-        width: 100%;
-        display: flex;
-        justify-content: flex-start;
+      
+      .gallery-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 2rem;
+      }
+      
+       .gallery-tile {
+        position: relative;
+        overflow: hidden;
       }
 
-      .image img {
-        max-width: 576x;
-        width: 100%;
-        height: auto;
-        margin-left: 100px;
+      .gallery-tile img {
+        width: 265px;
+        height: 295px;
+        display: block;
+        margin-bottom: 0.5rem;
+        object-fit: cover;
       }
-
+      
       footer {
         text-align: center;
         padding: 3rem;
@@ -186,11 +179,14 @@
         {{paragraphs}}
       </div>
 
-        <div class="gallery">
-          {{images}}
+        <div class="gallery-grid">
+          <div class="gallery-grid">
+            {{images}}
+          </div>
         </div>
     </main>
 
     <footer>© 2026 Charlie Petel. All rights reserved.</footer>
   </body>
 </html>
+
