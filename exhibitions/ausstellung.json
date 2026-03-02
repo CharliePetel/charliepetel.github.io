@@ -9,7 +9,7 @@
       "Repetition as rhythm, painting as echo.",
       "A gesture returns - again, not the same."
     ],
-    "image": ["images/HowManyMoreTimes-1.jpg",
+    "images": ["images/HowManyMoreTimes-1.jpg",
               "images/HowManyMoreTimes-2.jpg",
               "images/HowManyMoreTimes-3.jpg",
               "images/HowManyMoreTimes-4.jpg",
@@ -17,3 +17,4 @@
     ]
   }
 ]
+
