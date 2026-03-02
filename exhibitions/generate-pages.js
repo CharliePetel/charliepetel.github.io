@@ -12,7 +12,7 @@ data.forEach((exhibition) => {
     .replace("{{subtitle}}", exhibition.subtitle)
     .replace("{{date}}", exhibition.date)
     .replace("{{paragraphs}}", paragraphsHtml)
-    .replace("{{image}}", exhibition.image);
+    .replace("{{images}}", exhibition.images);
 
   fs.writeFileSync(exhibition.filename, html, "utf8");
   console.log(`✅ Seite erstellt: ${exhibition.filename}`);
@@ -170,3 +170,4 @@ const exhibitionsPage = `
 
 fs.writeFileSync("../exhibitions.html", exhibitionsPage, "utf8");
 console.log("✅ Ausstellungsübersicht erzeugt: exhibitions.html");
+
