@@ -10,11 +10,12 @@
       "A gesture returns - again, not the same."
     ],
     "images": [
-              "images/HowManyMoreTimes-1.jpg",
-              "images/HowManyMoreTimes-2.jpg",
-              "images/HowManyMoreTimes-3.jpg",
-              "images/HowManyMoreTimes-4.jpg",
-              "images/HowManyMoreTimes-5.jpg"
+              "../images/HowManyMoreTimes-1.jpg",
+              "../images/HowManyMoreTimes-2.jpg",
+              "../images/HowManyMoreTimes-3.jpg",
+              "../images/HowManyMoreTimes-4.jpg",
+              "../images/HowManyMoreTimes-5.jpg"
     ]
   }
 ]
+
